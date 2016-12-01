@@ -20,7 +20,7 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public Account createAccount(int accountNumber,int amount)throws InsufficientInitialBalanceException
 	{
-		
+			int initialbalance;
 		if(amount<500)
 		{
 			throw new InsufficientInitialBalanceException();
